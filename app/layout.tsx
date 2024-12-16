@@ -24,7 +24,7 @@ export default async function RootLayout({ children }: PropsWithChildren) {
   } = await supabase.auth.getUser();
 
   return (
-    <html lang="en" className="h-full">
+    <html lang="en" className="h-full dark">
       <body className="h-full">
         <Providers>
           <div className="flex flex-col items-center h-full">
