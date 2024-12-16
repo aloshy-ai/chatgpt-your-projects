@@ -14,9 +14,6 @@
         devShells.default = pkgs.mkShell {
           buildInputs = with pkgs; [
             nodejs_18
-            git
-            gh
-            docker
             deno
           ];
 
