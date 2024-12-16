@@ -10,21 +10,26 @@
     flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = nixpkgs.legacyPackages.${system};
-      in
-      {
+      in {
         devShells.default = pkgs.mkShell {
           buildInputs = with pkgs; [
-            nodejs-18_x
-            nodePackages.npm
-            nodePackages.yarn
-            direnv
+            nodejs_18
+            git
+            gh
+            docker
+            deno
           ];
-          
+
           shellHook = ''
-            echo "Node.js development environment loaded"
-            echo "Node version: $(node --version)"
-            echo "NPM version: $(npm --version)"
+            if [ ! -d "node_modules" ]; then
+              echo "Installing dependencies..."
+              npm install
+              supabase start
+            fi
+
+            echo "🅽 🅸 🆇  🅴 🅽 🆅"
           '';
         };
-      });
+      }
+    );
 }

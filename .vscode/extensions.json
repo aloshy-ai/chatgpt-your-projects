@@ -1,5 +1,6 @@
 {
 	"recommendations": [
+		"arrterian.nix-env-selector",
 		"denoland.vscode-deno",
 		"esbenp.prettier-vscode",
 		"dbaeumer.vscode-eslint",
