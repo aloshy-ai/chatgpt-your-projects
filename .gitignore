@@ -27,6 +27,7 @@ yarn-error.log*
 # env files
 .env*
 !.env*.example
+!.envrc
 
 # vercel
 .vercel
@@ -34,3 +35,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Idea files
+.idea
+
+# Direnv files
+.direnv
