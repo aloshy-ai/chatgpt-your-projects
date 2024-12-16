@@ -5,5 +5,6 @@
 		"esbenp.prettier-vscode",
 		"dbaeumer.vscode-eslint",
 		"bradlc.vscode-tailwindcss",
+		"ms-edgedevtools.vscode-edge-devtools"
 	],
 }
